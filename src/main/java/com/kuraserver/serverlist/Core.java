@@ -19,8 +19,6 @@ public class Core extends PluginBase {
         ServerListAPI.init(this);
         CommandManager.init(this);
         FormHandler.init(this);
-
-        ServerListAPI.getDetail("https://pe.minecraft.jp/servers/133.130.88.110:19132").getName();
     }
 
 }

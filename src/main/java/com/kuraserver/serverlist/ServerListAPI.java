@@ -67,7 +67,17 @@ public class ServerListAPI {
         String ip = address[0];
         int port = address.length == 2 ? Integer.parseInt(address[1]) : 19132;
 
-        return new ServerDetails(name, text, ip, port, "", 0, 0, 0, "");
+        String version = contentElements.get(1).text();
+
+        String[] players = contentElements.get(4).text().split(" ");
+        int currentPlayers = Integer.parseInt(players[0]);
+        int maxPlayers = Integer.parseInt(players[2]);
+
+        int ping = Integer.parseInt(contentElements.get(7).text().replace("ms", ""));
+
+        String owner = contentElements.get(10).select("a").text();
+
+        return new ServerDetails(name, text, ip, port, version, maxPlayers, currentPlayers, ping, owner);
     }
 
     public static void showServerList(Player player){
