@@ -1,0 +1,5 @@
+name: ServerListPlugin
+main: com.kuraserver.serverlist.Core
+version: 1.0.0
+author: kurarin
+api: ["1.0.0"]
