@@ -1,5 +1,5 @@
 # ServerListPlugin
-Minecraft統合版向けサーバーソフトであるNukkit用プラグイン。
+Minecraft統合版向けサーバーソフトであるNukkit用プラグイン。  
 Minecraftサーバーまとめサイトである https://pe.minecraft.jp/ をNukkitサーバー内でも使えるようにします。
 
 ## 注意点
